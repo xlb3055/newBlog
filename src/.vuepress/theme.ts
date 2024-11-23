@@ -9,7 +9,7 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Howkinsen",
+    name: "Bin",
     url: "/avator_img.jpg",
   },
 
@@ -33,7 +33,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个努力学习进步的全栈开发者",
+    description: "一个努力学习进步的开发者",
     intro: "/intro.html",
     // medias: {
     //   Baidu: "https://example.com",
