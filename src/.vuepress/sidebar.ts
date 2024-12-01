@@ -135,6 +135,14 @@ export default sidebar({
       collapsible: true,
       expanded: true,  // 默认展开
     },
+    {
+      text: "链表",
+      icon: " fas fa-project-diagram",
+      prefix: "链表/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
   ],
   // 项目经验独立的侧边栏
   "/tech/": [
