@@ -8,7 +8,7 @@ tag:
 - 源码分析
 - 后端开发技巧
 ---
-# ArrayList源码分析
+# ArrayList
 
 ### `ArrayList` 核心源码解读与扩容机制分析
 
