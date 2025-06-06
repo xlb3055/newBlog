@@ -9,7 +9,7 @@ export default sidebar({
       prefix: "Java/",
       children: "structure",
       collapsible: true,
-      expanded: false,
+      expanded: true,
     },
     {
       text: "计算机基础",
@@ -17,7 +17,7 @@ export default sidebar({
       prefix: "计算机基础/",
       children: "structure",
       collapsible: true,
-      expanded: false,
+      expanded: true,
     },
     {
       text: "数据库",
@@ -25,7 +25,7 @@ export default sidebar({
       prefix: "数据库/",
       children: "structure",
       collapsible: true,
-      expanded: false,
+      expanded: true,
     },
     {
       text: "开发工具",
@@ -147,9 +147,33 @@ export default sidebar({
   // 项目经验独立的侧边栏
   "/tech/": [
     {
-      text: "Ai流式输出",
+      text: "RabbitMQ",
       icon: "fas fa-sitemap",
-      prefix: "Ai流式输出/",
+      prefix: "RabbitMQ/",
+      children: "structure",
+      collapsible: true,
+      expanded: false,  // 默认展开
+    },
+    {
+      text: "Redis",
+      icon: "fas fa-sitemap",
+      prefix: "Redis/",
+      children: "structure",
+      collapsible: true,
+      expanded: false,  // 默认展开
+    },
+    {
+      text: "MyBatis",
+      icon: "fas fa-sitemap",
+      prefix: "MyBatis/",
+      children: "structure",
+      collapsible: true,
+      expanded: false,  // 默认展开
+    },
+    {
+      text: "实习日记",
+      icon: "fas fa-sitemap",
+      prefix: "实习日记/",
       children: "structure",
       collapsible: true,
       expanded: true,  // 默认展开
