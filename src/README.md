@@ -7,6 +7,12 @@ heroImage: /avator_img.jpg
 heroText: 博客之路
 heroFullScreen: true
 tagline: 千里之行，始于足下。
+bgImage: /assets/images/backgrounds/3.jpg
+bgImageStyle:
+  opacity: 1
+  background-attachment: fixed
+  background-size: cover
+  background-position: center
 projects:
 #  - icon: https://vuejs.press/images/hero.png
 #    name: VuePress

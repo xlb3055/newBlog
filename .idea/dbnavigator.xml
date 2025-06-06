@@ -4,6 +4,12 @@
     <mappings />
     <preferences />
   </component>
+  <component name="DBNavigator.Project.DatabaseAssistantManager">
+    <assistants />
+  </component>
+  <component name="DBNavigator.Project.DatabaseFileManager">
+    <open-files />
+  </component>
   <component name="DBNavigator.Project.Settings">
     <connections />
     <browser-settings>

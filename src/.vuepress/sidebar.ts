@@ -2,7 +2,7 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
   // 配置 `posts` 目录的各个子目录，取消统一的“面试题”标题
-  "/posts/": [
+  "/Java八股/": [
     {
       text: "Java基础",
       icon: "fab fa-java",

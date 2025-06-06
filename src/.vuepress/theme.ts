@@ -5,21 +5,37 @@ import sidebar from "./sidebar.js";
 
 const ENCRYPT_PASSWORD = ["1234"]
 
+// 定义主题配置
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
-
+  // 网站基本信息
+  hostname: "https://xlb3055.github.io",
+  
   author: {
     name: "Bin",
     url: "/avator_img.jpg",
   },
 
+  // 使用更现代的图标集
   iconAssets: "fontawesome-with-brands",
-
+  
+  // 设置Logo
   logo: "/avator_img.jpg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
+  logoDark: "/avator_img.jpg",
+  
+  // GitHub仓库链接
+  repo: "xlb3055/newBlog",
+  repoLabel: "GitHub",
+  
   docsDir: "src",
+  
+  // 深色模式切换按钮
+  darkmode: "switch",
+  
+  // 全屏按钮支持
+  fullscreen: true,
+  
+  // 页面信息显示
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   // 导航栏
   navbar,
@@ -35,43 +51,16 @@ export default hopeTheme({
   blog: {
     description: "一个努力学习进步的开发者",
     intro: "/intro.html",
-    // medias: {
-    //   Baidu: "https://example.com",
-    //   BiliBili: "https://example.com",
-    //   Bitbucket: "https://example.com",
-    //   Dingding: "https://example.com",
-    //   Discord: "https://example.com",
-    //   Dribbble: "https://example.com",
-    //   Email: "mailto:info@example.com",
-    //   Evernote: "https://example.com",
-    //   Facebook: "https://example.com",
-    //   Flipboard: "https://example.com",
-    //   Gitee: "https://example.com",
-    //   GitHub: "https://example.com",
-    //   Gitlab: "https://example.com",
-    //   Gmail: "mailto:info@example.com",
-    //   Instagram: "https://example.com",
-    //   Lark: "https://example.com",
-    //   Lines: "https://example.com",
-    //   Linkedin: "https://example.com",
-    //   Pinterest: "https://example.com",
-    //   Pocket: "https://example.com",
-    //   QQ: "https://example.com",
-    //   Qzone: "https://example.com",
-    //   Reddit: "https://example.com",
-    //   Rss: "https://example.com",
-    //   Steam: "https://example.com",
-    //   Twitter: "https://example.com",
-    //   Wechat: "https://example.com",
-    //   Weibo: "https://example.com",
-    //   Whatsapp: "https://example.com",
-    //   Youtube: "https://example.com",
-    //   Zhihu: "https://example.com",
-    //   VuePressThemeHope: {
-    //     icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-    //     link: "https://theme-hope.vuejs.press",
-    //   },
-    // },
+    // 博客头部配置
+    avatar: "/avator_img.jpg",
+    // 每页文章数量
+    articlePerPage: 10,
+    // 社交媒体链接
+    medias: {
+      GitHub: "https://github.com/xlb3055",
+      Zhihu: "https://www.zhihu.com",
+      Email: "1428982342@qq.com",
+    },
   },
 
   // 加密配置
@@ -80,6 +69,9 @@ export default hopeTheme({
       "/demo/encrypt.html": ENCRYPT_PASSWORD,
     },
   },
+  
+  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
+  // hotReload: true,
 
   // 多语言配置
   metaLocales: {
@@ -89,33 +81,69 @@ export default hopeTheme({
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
 
-  // 在这里配置主题提供的插件
+  // 在这里配置主题插件
   plugins: {
+    // 博客插件
     blog: true,
-
-    // 启用之前需安装 @waline/client
-    // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
+    
+    // 评论功能 - 暂时禁用，需要先在GitHub上安装Giscus应用
     // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
+    //   provider: "Giscus",
+    //   repo: "xlb3055/blog-comments",
+    //   repoId: "R_kgDOLF4Lfg",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOLF4Lfs4CdXVK",
     // },
-
+    
+    // 代码复制功能
+    copyCode: {
+      showInMobile: true,
+    },
+    
+    // 图片预览
+    photoSwipe: true,
+    
+    // 搜索功能
+    search: true,
+    
+    // 阅读进度条
+    readingTime: true,
+    
+    // 组件支持
     components: {
       components: ["Badge", "VPCard"],
     },
 
-    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
+    // Markdown 增强
     mdEnhance: {
+      // 文本对齐
       align: true,
+      // 属性支持
       attrs: true,
+      // 代码块分组
       codetabs: true,
+      // 组件支持
       component: true,
+      // 代码演示
       demo: true,
+      // 图片增强
       figure: true,
+      // 图片懒加载
       imgLazyload: true,
+      // 图片大小
       imgSize: true,
+      // 包含文件
       include: true,
+      // 标记
       mark: true,
+      // 脚注
+      footnote: true,
+      // 图表
+      chart: true,
+      // 流程图
+      flowchart: true,
+      // 代码块高亮
+      vPre: true,
       plantuml: true,
       spoiler: true,
       stylize: [
@@ -131,11 +159,6 @@ export default hopeTheme({
           },
         },
       ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
 
       // 在启用之前安装 chart.js
       // chart: true,
