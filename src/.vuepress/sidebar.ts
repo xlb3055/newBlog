@@ -163,29 +163,14 @@ export default sidebar({
   // 项目经验独立的侧边栏
   "/tech/": [
     {
-      text: "RabbitMQ",
+      text: "场景",
       icon: "fas fa-sitemap",
-      prefix: "RabbitMQ/",
+      prefix: "场景/",
       children: "structure",
       collapsible: true,
       expanded: true,  // 默认展开
     },
-    {
-      text: "Redis",
-      icon: "fas fa-sitemap",
-      prefix: "Redis/",
-      children: "structure",
-      collapsible: true,
-      expanded: true,  // 默认展开
-    },
-    {
-      text: "MyBatis",
-      icon: "fas fa-sitemap",
-      prefix: "MyBatis/",
-      children: "structure",
-      collapsible: true,
-      expanded: true,  // 默认展开
-    },
+
   ],
   // 根目录和 intro 的配置（如果需要）
   "/": [
