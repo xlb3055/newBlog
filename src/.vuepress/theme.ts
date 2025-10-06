@@ -70,7 +70,7 @@ export default hopeTheme({
     },
   },
   
-  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
+  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大的负面影响
   // hotReload: true,
 
   // 多语言配置
@@ -78,7 +78,7 @@ export default hopeTheme({
     editLink: "在 GitHub 上编辑此页",
   },
 
-  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
+  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大的负面影响
   // hotReload: true,
 
   // 在这里配置主题插件
@@ -180,9 +180,14 @@ export default hopeTheme({
       // 在启用之前安装 mathjax-full
       // mathjax: true,
 
+      // 在theme.ts文件中找到这段代码
       // 在启用之前安装 mermaid
       // mermaid: true,
-
+      
+      // 修改为
+      // 在启用之前安装 mermaid
+      mermaid: true,
+      
       // playground: {
       //   presets: ["ts", "vue"],
       // },

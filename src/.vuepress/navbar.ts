@@ -20,6 +20,12 @@ export default navbar([
     icon: "fas fa-folder-open",//图标
     link: "/tech/",//路由
   },
+  {
+    // 最上面的导航栏
+    text: "奶奶都能看懂系列",//名称
+    icon: "fas fa-folder-open",//图标
+    link: "/奶奶八股/",//路由
+  },
   // {
   //   text: "博文",
   //   icon: "pen-to-square",

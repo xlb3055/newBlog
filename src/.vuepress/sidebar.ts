@@ -170,7 +170,16 @@ export default sidebar({
       collapsible: true,
       expanded: true,  // 默认展开
     },
-
+  ],
+  "/奶奶八股/": [
+    {
+      text: "基础",
+      icon: "fas fa-sitemap",
+      prefix: "基础/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
   ],
   // 根目录和 intro 的配置（如果需要）
   "/": [
