@@ -159,6 +159,14 @@ export default sidebar({
       collapsible: true,
       expanded: true,  // 默认展开
     },
+    {
+      text: "技巧",
+      icon: " fas fa-project-diagram",
+      prefix: "技巧/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
   ],
   // 项目经验独立的侧边栏
   "/tech/": [
