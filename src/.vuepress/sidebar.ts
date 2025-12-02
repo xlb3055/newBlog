@@ -167,6 +167,14 @@ export default sidebar({
       collapsible: true,
       expanded: true,  // 默认展开
     },
+    {
+      text: "多维动态规划",
+      icon: " fas fa-project-diagram",
+      prefix: "多维动态规划/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
   ],
   // 项目经验独立的侧边栏
   "/tech/": [
