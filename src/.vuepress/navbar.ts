@@ -22,7 +22,7 @@ export default navbar([
   },
   {
     // 最上面的导航栏
-    text: "奶奶都能看懂系列",//名称
+    text: "其他",//名称
     icon: "fas fa-folder-open",//图标
     link: "/奶奶八股/",//路由
   },

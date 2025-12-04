@@ -204,6 +204,14 @@ export default sidebar({
       collapsible: true,
       expanded: true,  // 默认展开
     },
+    {
+      text: "Neo4j",
+      icon: "fas fa-sitemap",
+      prefix: "Neo4j/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
   ],
   // 根目录和 intro 的配置（如果需要）
   "/": [
