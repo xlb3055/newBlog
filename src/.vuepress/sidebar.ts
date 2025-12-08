@@ -183,6 +183,14 @@ export default sidebar({
       collapsible: true,
       expanded: true,  // 默认展开
     },
+    {
+      text: "贪心",
+      icon: " fas fa-project-diagram",
+      prefix: "贪心/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
   ],
   // 项目经验独立的侧边栏
   "/tech/": [
