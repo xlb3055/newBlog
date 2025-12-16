@@ -191,6 +191,30 @@ export default sidebar({
       collapsible: true,
       expanded: true,  // 默认展开
     },
+    {
+      text: "堆",
+      icon: " fas fa-project-diagram",
+      prefix: "堆/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
+      text: "栈",
+      icon: " fas fa-project-diagram",
+      prefix: "栈/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
+      text: "二分查找",
+      icon: " fas fa-project-diagram",
+      prefix: "二分查找/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
   ],
   // 项目经验独立的侧边栏
   "/tech/": [
