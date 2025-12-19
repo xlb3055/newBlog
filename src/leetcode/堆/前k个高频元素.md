@@ -73,6 +73,39 @@ nums = [1,2,1,2,1,2,3,1,2], k = 2
 ```java
 import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 读取数组长度
+        int n = scanner.nextInt();
+        int[] nums = new int[n];
+
+        // 读取数组元素
+        for (int i = 0; i < n; i++) {
+            nums[i] = scanner.nextInt();
+        }
+
+        // 读取k值
+        int k = scanner.nextInt();
+
+        Solution solution = new Solution();
+        int[] result = solution.topKFrequent(nums, k);
+
+        // 输出结果（格式：[1, 2]）
+        System.out.print("[");
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i]);
+            if (i < result.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+
+        scanner.close();
+    }
+}
+
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         // 1. 统计每个元素的出现频率

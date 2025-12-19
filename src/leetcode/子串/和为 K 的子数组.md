@@ -83,8 +83,28 @@ sum[i-1] = sum[j] - k
 
 ```java
 import java.util.HashMap;
+import java.util.Scanner;
 
-public class SubarraySumEqualsK {
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int n = scanner.nextInt();
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++) {
+            nums[i] = scanner.nextInt();
+        }
+        int k = scanner.nextInt();
+
+        Solution solution = new Solution();
+        int result = solution.subarraySum(nums, k);
+        System.out.println(result);
+
+        scanner.close();
+    }
+}
+
+class Solution {
     public int subarraySum(int[] nums, int k) {
         // 初始化哈希表，记录前缀和出现次数
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -108,20 +128,6 @@ public class SubarraySumEqualsK {
         }
 
         return count;
-    }
-
-    public static void main(String[] args) {
-        SubarraySumEqualsK solution = new SubarraySumEqualsK();
-
-        // 示例1
-        int[] nums1 = {1, 1, 1};
-        int k1 = 2;
-        System.out.println(solution.subarraySum(nums1, k1)); // 输出: 2
-
-        // 示例2
-        int[] nums2 = {1, 2, 3};
-        int k2 = 3;
-        System.out.println(solution.subarraySum(nums2, k2)); // 输出: 2
     }
 }
 ```

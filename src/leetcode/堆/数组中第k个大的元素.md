@@ -63,6 +63,35 @@ nums = [3,2,3,1,2,4,5,5,6], k = 4
 
 ## ✅ 小顶堆代码（Java）
 ```java
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 读取数组长度
+        int n = scanner.nextInt();
+        int[] nums = new int[n];
+
+        // 读取数组元素
+        for (int i = 0; i < n; i++) {
+            nums[i] = scanner.nextInt();
+        }
+
+        // 读取k值
+        int k = scanner.nextInt();
+
+        Solution solution = new Solution();
+        int result = solution.findKthLargest(nums, k);
+
+        // 输出结果
+        System.out.println(result);
+
+        scanner.close();
+    }
+}
+
 class Solution {
     public int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> queue = new PriorityQueue<>();
@@ -98,6 +127,33 @@ class Solution {
 ## ✅ 快速选择代码（Java）
 ```java
 import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 读取数组长度
+        int n = scanner.nextInt();
+        int[] nums = new int[n];
+
+        // 读取数组元素
+        for (int i = 0; i < n; i++) {
+            nums[i] = scanner.nextInt();
+        }
+
+        // 读取k值
+        int k = scanner.nextInt();
+
+        Solution solution = new Solution();
+        int result = solution.findKthLargest(nums, k);
+
+        // 输出结果
+        System.out.println(result);
+
+        scanner.close();
+    }
+}
 
 class Solution {
     private Random random = new Random();
@@ -123,7 +179,7 @@ class Solution {
         // 随机选基准，避免最坏情况
         int randomIndex = left + random.nextInt(right - left + 1);
         swap(nums, left, randomIndex);
-        
+
         int pivot = nums[left];
         int i = left, j = right;
         while (i < j) {
