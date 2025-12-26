@@ -160,6 +160,22 @@ export default sidebar({
       expanded: true,  // 默认展开
     },
     {
+      text: "二叉树",
+      icon: " fas fa-project-diagram",
+      prefix: "二叉树/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
+      text: "图论",
+      icon: " fas fa-project-diagram",
+      prefix: "图论/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
       text: "技巧",
       icon: " fas fa-project-diagram",
       prefix: "技巧/",
