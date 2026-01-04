@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://xlb3055.github.io/newBlog/sitemap.xml
