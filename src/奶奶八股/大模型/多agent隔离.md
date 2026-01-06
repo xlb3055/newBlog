@@ -19,7 +19,7 @@ tag:
 * 使用 **Claude Code CLI**
 * 使用 **Claude Agent SDK（Python）**
 * 希望在 **同一台服务器** 上运行 **多个逻辑隔离的 Claude Agent**
-* 每个 Agent 拥有 **独立的 skills / settings / 行为边界**
+* 每个 Agent 拥有 **独立的完整配置（skills / settings / CLAUDE.md / 行为边界）**
 
 ---
 
@@ -31,8 +31,8 @@ tag:
 * Word Agent：只处理 Word 相关能力
 * 每个 Agent：
 
-    * 只暴露自己的 skills
-    * 不共享 system prompt / skill 集
+    * 只暴露自己的配置目录（skills / CLAUDE.md / settings 等）
+    * 不共享 system prompt / CLAUDE.md / skill 集
     * 不会“串技能”或误调用
 
 但现实约束是：
@@ -54,6 +54,8 @@ CLAUDE_CONFIG_DIR=/path/to/.claude-config
 
 ```
 .claude-config-xxx/
+├─ CLAUDE.md
+├─ settings.json
 └─ skills/
    └─ <skill_name>/
       ├─ SKILL.md
@@ -62,7 +64,7 @@ CLAUDE_CONFIG_DIR=/path/to/.claude-config
 
 **核心事实：**
 
-> Claude Code 在启动 Agent Runtime 时，只会从 `CLAUDE_CONFIG_DIR` 加载一次配置与 skills。
+> Claude Code 在启动 Agent Runtime 时，只会从 `CLAUDE_CONFIG_DIR` 加载一次完整配置（含 CLAUDE.md / settings / skills）。
 
 这为“Agent 隔离”提供了天然的切入点。
 
@@ -76,8 +78,8 @@ CLAUDE_CONFIG_DIR=/path/to/.claude-config
 
 * 每个 Agent 对应一个 **独立的 `.claude-config-*` 目录**
 * SDK 层通过 `env={"CLAUDE_CONFIG_DIR": ...}` 注入
-* Claude Agent Runtime 只加载该目录下的 skills
-* 不会看到其他 Agent 的 skill
+* Claude Agent Runtime 只加载该目录下的完整配置
+* 不会看到其他 Agent 的配置与 skill
 
 ---
 
@@ -216,7 +218,7 @@ SKILL_WORD_OK
 
 说明：
 
-> Claude Agent **只加载了本次传入配置目录下的 skills**，不存在技能串扰。
+> Claude Agent **只加载了本次传入配置目录下的完整配置（含 CLAUDE.md / skills / settings）**，不存在技能串扰。
 
 ---
 
@@ -227,7 +229,7 @@ SKILL_WORD_OK
 #### 1️⃣ 配置层
 
 * `CLAUDE_CONFIG_DIR` 不同
-* settings / system 行为不同
+* CLAUDE.md / settings / system 行为不同
 
 #### 2️⃣ Skill 发现层
 
