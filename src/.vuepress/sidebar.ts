@@ -277,6 +277,32 @@ export default sidebar({
       expanded: true,  // 默认展开
     },
   ],
+  "/设计模式/": [
+    {
+      text: "行为模式",
+      icon: "fas fa-sitemap",
+      prefix: "行为模式/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
+      text: "创建型模式",
+      icon: "fas fa-sitemap",
+      prefix: "创建型模式/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
+      text: "结构型模式",
+      icon: "fas fa-sitemap",
+      prefix: "结构型模式/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+  ],
   // 根目录和 intro 的配置（如果需要）
   "/": [
     "",
