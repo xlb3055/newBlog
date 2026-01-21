@@ -7,57 +7,87 @@ heroImage: /avator_img.jpg
 heroText: 博客之路
 heroFullScreen: true
 tagline: 千里之行，始于足下。
-bgImage: /assets/images/backgrounds/3.jpg
+bgImage: /assets/images/backgrounds/1.jpg
 bgImageStyle:
   opacity: 1
   background-attachment: fixed
   background-size: cover
   background-position: center
 projects:
-#  - icon: https://vuejs.press/images/hero.png
-#    name: VuePress
-#    desc: 基于 Vue 的静态文档构建器
-#    link: https://vuejs.press/zh/
+  - icon: fa-solid fa-brain
+    name: DeepViki
+    desc: AI 知识图谱与技术资料聚合
+    link: https://deepviki.com/
 
-  - icon: https://theme-hope-assets.vuejs.press/logo.svg
-    name: VuePress Theme Hope
-    desc: 一个功能强大的 VuePress 主题✨
-    link: https://theme-hope.vuejs.press/zh/
+  - icon: fa-solid fa-robot
+    name: Claude
+    desc: Anthropic 出品的 AI 助手
+    link: https://claude.ai/
 
-  - icon: https://mister-hope.com/logo.svg
-    name: Mr.Hope 主页
-    desc: VuePress Theme Hope 作者，内含学习资源
-    link: https://mister-hope.com/
+  - icon: fa-solid fa-code
+    name: Codex
+    desc: 面向开发任务的 AI 编程助手
+    link: https://openai.com/codex/
 
-  - icon: https://v2.cn.vuejs.org/images/logo.svg
-    name: Vue2
-    desc: Vue2 官方文档
-    link: https://v2.cn.vuejs.org/v2/guide/
+  - icon: fa-solid fa-terminal
+    name: OpenCode
+    desc: 面向工程场景的 AI 编程工具
+    link: https://opencode.ai/
 
-  - icon: https://element.eleme.cn/favicon.ico
-    name: Element-ui
-    desc: Element-ui 官方文档
-    link: https://element.eleme.cn/#/zh-CN
+  - icon: fa-brands fa-github
+    name: oh-my-opencode
+    desc: OpenCode 使用与生态整理
+    link: https://github.com/opencode-ai/oh-my-opencode
 
-  - icon: /CSDN图标.png
-    name: CSDN
-    desc: 程序员交流平台
-    link: https://www.csdn.net/
+  - icon: fa-brands fa-github
+    name: GitHub
+    desc: 代码托管与协作平台
+    link: https://github.com/
 
-  - icon: https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg
-    name: 稀土掘金
-    desc: 程序员交流平台
-    link: https://juejin.cn/
+  - icon: fa-solid fa-robot
+    name: OpenAI
+    desc: AI 模型与开发者生态
+    link: https://openai.com/
 
-  - icon: https://pic.leetcode-cn.com/056dd17dd0506591d04525f015765ab749e9f9f19dcaf6e0dcae5d77057d2392-15@3x.png
-    name: 力扣
-    desc: 程序员刷题平台
+  - icon: fa-solid fa-robot
+    name: Anthropic
+    desc: Claude 背后的 AI 公司
+    link: https://www.anthropic.com/
+
+  - icon: fa-solid fa-flask
+    name: Hugging Face
+    desc: 开源模型与数据集社区
+    link: https://huggingface.co/
+
+  - icon: fa-solid fa-book
+    name: Awesome LLM
+    desc: 大模型资料合集
+    link: https://github.com/Hannibal046/Awesome-LLM
+
+  - icon: fa-solid fa-code
+    name: LeetCode
+    desc: 刷题与算法训练平台
     link: https://leetcode.cn/
 
-  - icon: https://th.bing.com/th/id/OIP.Sh3E1j7AcWHL5nkAfT0CUwHaEK?rs=1&pid=ImgDetMain
-    name: MDN
-    desc: 很不错的前端学习平台
-    link: https://developer.mozilla.org/zh-CN/docs/Learn
+  - icon: fa-solid fa-comments
+    name: Stack Overflow
+    desc: 程序员问答社区
+    link: https://stackoverflow.com/
+
+  - icon: fa-solid fa-globe
+    name: 知乎
+    desc: 中文技术问答与专栏
+    link: https://www.zhihu.com/
+
+  - icon: fa-solid fa-pen-nib
+    name: 掘金
+    desc: 中文技术社区
+    link: https://juejin.cn/
+
+  - icon: fa-solid fa-graduation-cap
+    name: Coursera
+    desc: 在线课程与专项学习
+    link: https://www.coursera.org/
 
     
 footer: 不积跬步，无以至千里。
