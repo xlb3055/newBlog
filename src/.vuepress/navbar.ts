@@ -17,19 +17,19 @@ export default navbar([
   {
     // 最上面的导航栏
     text: "技术提升",//名称
-    icon: "fas fa-folder-open",//图标
+    icon: "fas fa-wrench",//图标
     link: "/tech/",//路由
   },
   {
     // 最上面的导航栏
     text: "奶奶来都能看懂",//名称
-    icon: "fas fa-folder-open",//图标
+    icon: "fas fa-book-open",//图标
     link: "/奶奶八股/",//路由
   },
   {
     // 最上面的导航栏
     text: "设计模式",//名称
-    icon: "fas fa-folder-open",//图标
+    icon: "fas fa-puzzle-piece",//图标
     link: "/设计模式/",//路由
   },
   // {
