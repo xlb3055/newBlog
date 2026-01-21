@@ -2,7 +2,7 @@
 
 ---
 
-## 📋 核心概念速查
+## 核心概念速查
 
 ### 数据模型对比
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 💻 Python 快速开始
+## Python 快速开始
 
 ### 1. 安装驱动
 ```bash
@@ -61,7 +61,7 @@ with Neo4jConnection(uri, auth) as conn:
 
 ---
 
-## 🔍 Cypher 查询语法速查
+## Cypher 查询语法速查
 
 ### 创建操作
 ```cypher
@@ -119,7 +119,7 @@ DETACH DELETE p
 
 ---
 
-## 🚀 常用查询模式
+## 常用查询模式
 
 ### 1. 路径查询
 ```cypher
@@ -165,7 +165,7 @@ RETURN potential.name, count(*) as connection_strength
 
 ---
 
-## 📊 性能优化技巧
+## 性能优化技巧
 
 ### 1. 索引创建
 ```cypher
@@ -209,7 +209,7 @@ with driver.session() as session:
 
 ---
 
-## 🛠️ 实用代码片段
+## 实用代码片段
 
 ### 1. 查询结果转换为 DataFrame
 ```python
@@ -250,7 +250,7 @@ def process_large_result(session, query, batch_size=1000):
 
 ---
 
-## 🎯 常见问题解决
+## 常见问题解决
 
 ### 1. 内存不足
 ```python
@@ -298,7 +298,7 @@ driver = GraphDatabase.driver(
 
 ---
 
-## 📝 开发最佳实践
+## 开发最佳实践
 
 ### 1. 使用连接池
 ```python
@@ -353,7 +353,7 @@ def logged_query(session, query, **params):
 
 ---
 
-## 🔧 调试工具
+## 调试工具
 
 ### 1. 查询调试
 ```cypher
@@ -391,7 +391,7 @@ RETURN nodes, relationships
 
 ---
 
-## 🎨 可视化技巧
+## 可视化技巧
 
 ### 1. NetworkX 集成
 ```python
@@ -424,7 +424,7 @@ def plot_query_results(df, x_col, y_col, title="Query Results"):
 
 ---
 
-## 📚 更多资源
+## 更多资源
 
 ### 官方文档
 - [Neo4j 文档](https://neo4j.com/docs/)
@@ -443,7 +443,7 @@ def plot_query_results(df, x_col, y_col, title="Query Results"):
 
 ---
 
-## 💡 提示
+## 提示
 
 - 使用 `EXPLAIN` 查看执行计划
 - 使用 `PROFILE` 分析性能

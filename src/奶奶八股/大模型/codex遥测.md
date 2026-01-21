@@ -19,10 +19,10 @@ tag:
 
 > **Codex 遥测 = 给 Codex 装一个“全程录像 + 账本 + 监控屏幕”**
 
-* 📒 **文件**：所有事情都落盘（审计兜底）
-* 👀 **otel-view**：人能直接看的“翻账本工具”
-* 📊 **Grafana**：图形化监控
-* 🧠 **Collector**：中转站（唯一大脑）
+* **文件**：所有事情都落盘（审计兜底）
+* **otel-view**：人能直接看的“翻账本工具”
+* **Grafana**：图形化监控
+* **Collector**：中转站（唯一大脑）
 
 ---
 
@@ -34,7 +34,7 @@ python3 --version
 codex --version
 ```
 
-👉 **不报错即可，看不懂输出没关系**
+不报错即可，看不懂输出没关系。
 
 ---
 
@@ -48,15 +48,15 @@ mkdir -p ~/otel-stack
 
 | 目录               | 干嘛的            |
 | ---------------- | -------------- |
-| `/tmp/otel-data` | 📒 所有日志账本      |
-| `~/.codex/otel`  | ⚙️ 配置 & 工具     |
-| `~/otel-stack`   | 🧱 Grafana 全家桶 |
+| `/tmp/otel-data` | 所有日志账本      |
+| `~/.codex/otel`  | 配置与工具        |
+| `~/otel-stack`   | Grafana 全家桶    |
 
 ---
 
 # 第 2 步：写 Collector 配置（照抄）
 
-📄 保存为
+保存为
 `~/.codex/otel/collector-config.yaml`
 
 ```yaml
@@ -100,7 +100,7 @@ service:
       exporters: [file/metrics]
 ```
 
-👉 **你不用看懂，只要保存成功**
+不用看懂，只要保存成功。
 
 ---
 
@@ -130,7 +130,7 @@ protocol = "binary"
 disable_response_storage = false
 ```
 
-👉 人话翻译：
+人话翻译：
 
 > Codex：
 > “我以后所有日志、过程，全丢给本机 4318 端口”
@@ -164,7 +164,7 @@ docker ps
 
 ## 5.1 保存 otel-view.py（全量，不省略）
 
-📄 保存为
+保存为
 `~/.codex/otel/otel-view.py`
 
 ```python
@@ -300,7 +300,7 @@ otel-view show
 otel-view show <id>
 ```
 
-👉 到这一步：
+到这一步：
 **审计 / 合规 / 回溯已经完全成立**
 
 ---
@@ -311,7 +311,7 @@ otel-view show <id>
 
 ## 9.1 保存 docker-compose.yaml（全量）
 
-📄 保存为
+保存为
 `~/otel-stack/docker-compose.yaml`
 
 ```yaml
@@ -389,9 +389,8 @@ admin / admin
 
 > 你现在已经：
 >
-> * ✅ 给 Codex 装了行车记录仪
-> * ✅ 所有操作都有文件审计
-> * ✅ 人能用命令行查
-> * ✅ 运维能用 Grafana 看
-
+> * 给 Codex 装了行车记录仪
+> * 所有操作都有文件审计
+> * 人能用命令行查
+> * 运维能用 Grafana 看
 
