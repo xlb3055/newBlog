@@ -49,11 +49,6 @@ projects:
     desc: AI 模型与开发者生态
     link: https://openai.com/
 
-  - icon: fa-solid fa-robot
-    name: Anthropic
-    desc: Claude 背后的 AI 公司
-    link: https://www.anthropic.com/
-
   - icon: fa-solid fa-flask
     name: Hugging Face
     desc: 开源模型与数据集社区
@@ -78,6 +73,11 @@ projects:
     name: 知乎
     desc: 中文技术问答与专栏
     link: https://www.zhihu.com/
+
+  - icon: fa-solid fa-building
+    name: 美团技术团队
+    desc: 美团技术团队官方博客
+    link: https://tech.meituan.com/美团技术团队
 
   - icon: fa-solid fa-pen-nib
     name: 掘金
