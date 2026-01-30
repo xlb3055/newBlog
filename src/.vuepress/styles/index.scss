@@ -1,1 +1,370 @@
-// place your custom styles here
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --brand-accent: #18a999;
+  --brand-ink: #0f4c81;
+  --brand-ink-strong: #0b3b64;
+  --brand-card-radius: 14px;
+  --navbar-height: 3.35rem;
+  --navbar-vertical-padding: 0.35rem;
+  --navbar-horizontal-padding: 1.25rem;
+  --navbar-mobile-height: 3.05rem;
+  --navbar-mobile-vertical-padding: 0.25rem;
+  --navbar-mobile-horizontal-padding: 0.9rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image:
+    radial-gradient(1200px 600px at 90% -10%, rgba(24, 169, 153, 0.12), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(15, 76, 129, 0.12), transparent 60%);
+}
+
+html[data-theme="dark"] body {
+  background-image:
+    radial-gradient(1000px 500px at 90% -10%, rgba(24, 169, 153, 0.12), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(15, 76, 129, 0.2), transparent 60%);
+}
+
+.vp-navbar {
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 248, 250, 0.96),
+    rgba(246, 248, 250, 0.78)
+  );
+  box-shadow: 0 12px 28px rgba(15, 76, 129, 0.12);
+}
+
+.vp-navbar .auto-link {
+  color: var(--grey-dark);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.vp-navbar .auto-link.route-link-active {
+  color: var(--brand-ink);
+}
+
+.vp-navbar .auto-link:hover {
+  color: var(--brand-accent);
+}
+
+.vp-navbar .vp-action-link {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: rgba(15, 76, 129, 0.06);
+  color: var(--brand-ink);
+}
+
+.vp-navbar .vp-action-link:hover {
+  border-color: rgba(15, 76, 129, 0.35);
+  color: var(--brand-ink-strong);
+}
+
+.theme-hope-content {
+  font-size: 17px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+.theme-hope-content h1,
+.theme-hope-content h2,
+.theme-hope-content h3,
+.theme-hope-content h4 {
+  font-family: var(--font-family-heading);
+  letter-spacing: 0.02em;
+}
+
+.theme-hope-content h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.theme-hope-content h2 {
+  font-size: 1.6rem;
+  margin-top: 2.2rem;
+}
+
+.theme-hope-content p {
+  margin: 0.9rem 0;
+}
+
+.theme-hope-content a {
+  color: var(--brand-ink);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.theme-hope-content a:hover {
+  color: var(--brand-accent);
+}
+
+.theme-hope-content blockquote {
+  border-left: 4px solid rgba(15, 76, 129, 0.35);
+  background: linear-gradient(90deg, rgba(15, 76, 129, 0.08), transparent 65%);
+}
+
+.theme-hope-content :not(pre) > code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 6px;
+  background: rgba(15, 76, 129, 0.08);
+  font-family: var(--font-family-mono);
+  font-weight: 500;
+}
+
+.theme-hope-content pre {
+  border-radius: 12px;
+  border: none;
+  box-shadow: none;
+}
+
+.theme-hope-content ul,
+.theme-hope-content ol {
+  padding-left: 1.2rem;
+}
+
+.theme-hope-content li {
+  margin: 0.35rem 0;
+}
+
+.theme-hope-content table {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.theme-hope-content table th {
+  background: rgba(15, 76, 129, 0.08);
+}
+
+.theme-hope-content img {
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(12, 30, 50, 0.08);
+}
+
+.vp-blog-hero {
+  position: relative;
+  padding-bottom: 1.2rem;
+  animation: hero-fade 0.7s ease both;
+}
+
+.vp-blog-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 24px;
+  background:
+    radial-gradient(480px 240px at 10% 20%, rgba(24, 169, 153, 0.18), transparent 60%),
+    radial-gradient(520px 260px at 90% 30%, rgba(15, 76, 129, 0.16), transparent 60%);
+}
+
+.vp-project-card {
+  border-radius: var(--brand-card-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 14px 28px var(--card-shadow);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(246, 248, 250, 0.9));
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+  will-change: transform;
+}
+
+.vp-project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 36px var(--card-shadow);
+}
+
+.vp-project-card .icon {
+  color: var(--brand-ink);
+  opacity: 0.8;
+}
+
+.vp-project-name {
+  font-family: var(--font-family-heading);
+  letter-spacing: 0.01em;
+}
+
+.vp-blog-hero-title {
+  letter-spacing: 0.03em;
+  font-size: clamp(2.2rem, 3vw, 3rem);
+}
+
+.vp-blog-hero-description {
+  font-size: 1.05rem;
+  color: var(--grey-dark);
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vp-project-card {
+  animation: card-rise 0.55s ease both;
+}
+
+.vp-project-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.vp-project-card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.vp-project-card:nth-child(3) {
+  animation-delay: 0.11s;
+}
+
+.vp-project-card:nth-child(4) {
+  animation-delay: 0.14s;
+}
+
+.vp-project-card:nth-child(5) {
+  animation-delay: 0.17s;
+}
+
+.vp-project-card:nth-child(6) {
+  animation-delay: 0.2s;
+}
+
+.vp-project-card:nth-child(7) {
+  animation-delay: 0.23s;
+}
+
+.vp-project-card:nth-child(8) {
+  animation-delay: 0.26s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vp-blog-hero,
+  .vp-project-card {
+    animation: none !important;
+  }
+}
+
+.vp-article-item {
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(246, 248, 250, 0.95));
+  box-shadow: 0 12px 24px rgba(12, 30, 50, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.vp-article-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 30px rgba(12, 30, 50, 0.12);
+}
+
+.vp-article-title a {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.vp-article-excerpt {
+  color: var(--grey-dark);
+}
+
+#toc {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 12px 24px rgba(12, 30, 50, 0.08);
+}
+
+.vp-toc-link {
+  color: var(--grey-dark);
+}
+
+.vp-toc-item.active > .vp-toc-link {
+  color: var(--brand-ink);
+}
+
+.vp-toc-marker {
+  background: linear-gradient(180deg, var(--brand-ink), var(--brand-accent));
+}
+
+div[class*="language-"] {
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 24px rgba(12, 30, 50, 0.08);
+  overflow: hidden;
+}
+
+div[class*="language-"] .line-numbers-wrapper {
+  border-right: 1px solid var(--border-color);
+  color: var(--grey-dark);
+}
+
+html[data-theme="dark"] .vp-navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(11, 18, 32, 0.96),
+    rgba(11, 18, 32, 0.75)
+  );
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .vp-navbar .auto-link {
+  color: rgba(201, 212, 224, 0.8);
+}
+
+html[data-theme="dark"] .vp-navbar .auto-link.route-link-active {
+  color: #e6eef7;
+}
+
+html[data-theme="dark"] .vp-navbar .vp-action-link {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(24, 169, 153, 0.12);
+  color: #d7e4f2;
+}
+
+html[data-theme="dark"] .theme-hope-content :not(pre) > code {
+  background: rgba(24, 169, 153, 0.18);
+}
+
+html[data-theme="dark"] .vp-blog-hero::before {
+  background:
+    radial-gradient(520px 260px at 10% 20%, rgba(24, 169, 153, 0.2), transparent 60%),
+    radial-gradient(540px 260px at 90% 30%, rgba(15, 76, 129, 0.22), transparent 60%);
+}
+
+html[data-theme="dark"] .vp-project-card {
+  background: linear-gradient(180deg, rgba(19, 28, 42, 0.98), rgba(15, 26, 43, 0.98));
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .vp-article-item {
+  background: linear-gradient(180deg, rgba(19, 28, 42, 0.98), rgba(15, 26, 43, 0.98));
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] #toc {
+  background: rgba(15, 26, 43, 0.95);
+}

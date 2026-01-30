@@ -1,2 +1,44 @@
-// you can change colors here
-$theme-color: #096dd9;
+// Brand palette (Direction A)
+$theme-color: #0f4c81;
+
+$text-color: (
+  light: #1b2a38,
+  dark: #c9d4e0,
+);
+
+$bg-color: (
+  light: #f6f8fa,
+  dark: #0b1220,
+);
+
+$bg-color-secondary: (
+  light: #eef2f6,
+  dark: #0f1a2b,
+);
+
+$bg-color-tertiary: (
+  light: #e7ecf2,
+  dark: #142138,
+);
+
+$border-color: (
+  light: #d7e0ea,
+  dark: #1f2f45,
+);
+
+$box-shadow: (
+  light: rgba(15, 76, 129, 0.1),
+  dark: rgba(0, 0, 0, 0.35),
+);
+
+$card-shadow: (
+  light: rgba(12, 30, 50, 0.18),
+  dark: rgba(0, 0, 0, 0.4),
+);
+
+$content-width: 860px;
+$home-page-width: 1180px;
+
+$font-family: '"Source Sans 3", "Noto Sans SC", "Source Han Sans SC", "Noto Sans CJK SC", sans-serif';
+$font-family-heading: '"Noto Serif SC", "Source Han Serif SC", "Noto Serif CJK SC", serif';
+$font-family-mono: '"JetBrains Mono", "Cascadia Mono", "Source Code Pro", "Fira Code", monospace';

@@ -1,3 +1,13 @@
 // you can change config here
-$colors: #c0392b, #d35400, #f39c12, #27ae60, #16a085, #2980b9, #8e44ad, #2c3e50,
-  #7f8c8d !default;
+$colors: #0f4c81, #1f6f8b, #2d98da, #18a999, #2c7a7b, #3a506b, #6b7a90, #9aa7b8,
+  #d1dae3 !default;
+
+$code-color: (
+  light: #1f2a36,
+  dark: #cfd8e3,
+) !default;
+
+$code-bg-color: (
+  light: #eaf1f7,
+  dark: #1b2230,
+) !default;
