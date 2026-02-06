@@ -287,17 +287,17 @@ export default sidebar({
       expanded: true,  // 默认展开
     },
     {
-      text: "创建型模式",
+      text: "创建模式",
       icon: "fas fa-sitemap",
-      prefix: "创建型模式/",
+      prefix: "创建模式/",
       children: "structure",
       collapsible: true,
       expanded: true,  // 默认展开
     },
     {
-      text: "结构型模式",
+      text: "结构模式",
       icon: "fas fa-sitemap",
-      prefix: "结构型模式/",
+      prefix: "结构模式/",
       children: "structure",
       collapsible: true,
       expanded: true,  // 默认展开

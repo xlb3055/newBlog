@@ -12,7 +12,7 @@
 ```yaml
 ---
 icon: pen-to-square
-date: YYYY-M-D
+date: YYYY-MM-DD
 category:
 - 后端
 tag:
