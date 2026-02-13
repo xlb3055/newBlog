@@ -261,17 +261,25 @@ export default sidebar({
       expanded: true,  // 默认展开
     },
     {
-      text: "Neo4j",
+      text: "大模型",
       icon: "fas fa-sitemap",
-      prefix: "Neo4j/",
+      prefix: "大模型/",
       children: "structure",
       collapsible: true,
       expanded: true,  // 默认展开
     },
     {
-      text: "大模型",
+      text: "12因素智能体",
       icon: "fas fa-sitemap",
-      prefix: "大模型/",
+      prefix: "12因素智能体/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
+      text: "Neo4j",
+      icon: "fas fa-sitemap",
+      prefix: "Neo4j/",
       children: "structure",
       collapsible: true,
       expanded: true,  // 默认展开
